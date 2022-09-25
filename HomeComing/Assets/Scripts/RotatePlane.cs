@@ -5,9 +5,14 @@ using static UnityEngine.GraphicsBuffer;
 
 public class RotatePlane : MonoBehaviour
 {
-
+    bool isRotate = true;
     void Update()
     {
-        transform.RotateAround(transform.position, Vector3.up, 60 * Time.deltaTime);
+        if(isRotate)
+            transform.RotateAround(transform.position, Vector3.up, 60 * Time.deltaTime);
+    }
+    public void Rotate()
+    {
+        isRotate = false;
     }
 }
