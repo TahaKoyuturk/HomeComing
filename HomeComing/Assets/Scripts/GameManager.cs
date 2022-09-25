@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
             {
                 cc.Go();
                 rp.Rotate();
-                print("sa");
             }
         }
     }
